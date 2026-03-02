@@ -28,4 +28,4 @@ jobs:
         
     - name: Test with pytest
       run: |
-        pytest tests/ --cov=ziora_imports
+        python -m pytest tests/ --cov=ziora_imports
