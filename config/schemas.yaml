@@ -1,0 +1,177 @@
+# Schema Configuration for different object types
+# Defines file format, required fields, field types, and validation rules
+
+schemas:
+  emp:
+    display_name: "Person/Employee"
+    description: "Person/Employee data import schema based on Person table structure"
+    required_fields:
+      - PersonNumber
+    field_types:
+      PersonNumber: string
+      FirstName: string
+      MiddleName: string
+      LastName: string
+      Preferredname: string
+      Email: string
+      Active: integer
+      LoginEnabled: integer
+      Inst: integer
+      title: string
+      Role_Cd: string
+      photourl: string
+      Currency_Cd: string
+      StatusCodeId: string
+      TypeCodeId: string
+      IsDeleted: integer
+      StartDate: datetime
+      EndDate: datetime
+      City: string
+      State: string
+      MgrPersonNumber: string
+    unique_fields:
+      - PersonNumber
+      - Email
+    validations:
+      Email:
+        pattern: "^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,}$"
+      PersonNumber:
+        min_length: 1
+        max_length: 200
+      Active:
+        min: 0
+        max: 1
+      LoginEnabled:
+        min: 0
+        max: 1
+      IsDeleted:
+        min: 0
+        max: 1
+      Inst:
+        min: 0
+        max: 1
+    fk_mappings:
+      Role_Cd:
+        table: "Roles"
+        pk_field: "RolePK"
+        code_field: "Role_Cd"
+      Currency_Cd:
+        table: "Currency"
+        pk_field: "CurrencyPK"
+        code_field: "Currency_Cd"
+      StatusCodeId:
+        table: "Code"
+        pk_field: "ItmId"
+        code_field: "ItmCd"
+        cat_cd: 1004
+      TypeCodeId:
+        table: "Code"
+        pk_field: "ItmId"
+        code_field: "ItmCd"
+        cat_cd: 200
+      MgrPersonNumber:
+        table: "Person"
+        pk_field: "PersonPK"
+        code_field: "PersonNumber"
+  
+  org:
+    display_name: "Organization"
+    description: "Organization data import schema"
+    required_fields:
+      - org_id
+      - org_name
+    field_types:
+      org_id: string
+      org_name: string
+      org_code: string
+      OrgType: string
+      parent_org_id: string
+      address: string
+      city: string
+      country: string
+      active: boolean
+    unique_fields:
+      - org_id
+      - org_code
+    validations:
+      org_code:
+        pattern: "^[A-Z0-9]{2,10}$"
+    fk_mappings:
+      OrgType:
+        table: "Code"
+        pk_field: "ItmId"
+        code_field: "ItmCd"
+        cat_cd: 1001
+  
+  job:
+    display_name: "Job"
+    description: "Job/Position data import schema"
+    required_fields:
+      - job_id
+      - job_title
+    field_types:
+      job_id: string
+      job_title: string
+      job_code: string
+      department: string
+      level: integer
+      min_salary: float
+      max_salary: float
+      active: boolean
+    unique_fields:
+      - job_id
+      - job_code
+    validations:
+      level:
+        min: 1
+        max: 10
+  
+  skill:
+    display_name: "Skill"
+    description: "Skill data import schema"
+    required_fields:
+      - skill_id
+      - skill_name
+    field_types:
+      skill_id: string
+      skill_name: string
+      skill_code: string
+      SkillType: string
+      category: string
+      description: string
+      level: integer
+      active: boolean
+    unique_fields:
+      - skill_id
+      - skill_code
+    validations:
+      level:
+        min: 1
+        max: 5
+  
+  emp_associations:
+    display_name: "Employee Associations"
+    description: "Employee associations with Organizations, Jobs, Skills, etc."
+    required_fields:
+      - Emp_No
+      - Obj_Cd
+      - Obj_Type
+    field_types:
+      Emp_No: string
+      Obj_Cd: string
+      Obj_Type: integer
+      AssociationType: integer
+    validations:
+      Obj_Type:
+        min: 0
+        max: 10
+      AssociationType:
+        min: 0
+        max: 10
+    fk_mappings:
+      SkillType:
+        table: "Code"
+        pk_field: "ItmId"
+        code_field: "ItmCd"
+        cat_cd: 1003
+

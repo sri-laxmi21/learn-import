@@ -1,0 +1,11 @@
+org_id,org_name,org_code,OrgType,parent_org_id,address,city,country,active,Lang_Cd,Timezone_Cd,CountryCode
+ACME001,ACME Corporation Headquarters,ACME-HQ,Dept,,123 Corporate Blvd,New York,United States,1,EN,EST,US
+ACME002,Sales Department,ACME-SALES,Dept,ACME001,456 Sales Street,New York,United States,1,EN,EST,US
+ACME003,Engineering Department,ACME-ENG,Dept,ACME001,789 Tech Avenue,San Francisco,United States,1,EN,PST,US
+ACME004,Marketing Division,ACME-MKTG,Dept,ACME001,321 Marketing Lane,Chicago,United States,1,EN,CST,US
+ACME005,ACME Canada Office,ACME-CA,Dept,,100 Maple Street,Toronto,Canada,1,EN,EST,CA
+ACME006,HR Department,ACME-HR,Dept,ACME001,555 HR Plaza,New York,United States,1,EN,EST,US
+ACME007,Finance Division,ACME-FIN,Dept,ACME001,777 Finance Tower,New York,United States,1,EN,EST,US
+ACME008,Operations Department,ACME-OPS,Dept,ACME001,999 Operations Way,Atlanta,United States,1,EN,EST,US
+ACME009,IT Support,ACME-IT,Dept,ACME001,111 Tech Center,Austin,United States,1,EN,CST,US
+ACME010,Legal Department,ACME-LEGAL,Dept,ACME001,222 Legal Court,Washington,United States,1,EN,EST,US

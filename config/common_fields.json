@@ -1,0 +1,63 @@
+{
+  "__comment__": "Common fields configuration - Fields that are common across all object types, and schema reference mappings",
+  "common_fields": {
+    "Lang_Cd": {
+      "type": "string",
+      "length": 50,
+      "required": false,
+      "schema_ref": "Lang",
+      "db_field": "LocaleFK",
+      "description": "Language/Locale code - common across all objects"
+    },
+    "Timezone_Cd": {
+      "type": "string",
+      "length": 50,
+      "required": false,
+      "schema_ref": "Timezone",
+      "db_field": "TimezoneID",
+      "description": "Timezone code - common across all objects"
+    },
+    "CountryCode": {
+      "type": "string",
+      "length": 255,
+      "required": false,
+      "cat_cd_ref": 1006,
+      "db_field": "CountryCodeId",
+      "description": "Country code from Code table (CatCd=1006) - use ItmCd value (e.g., 'US', 'CA') - common across all objects"
+    }
+  },
+  "schema_refs": {
+    "Currency": {
+      "table": "Currency",
+      "pk_field": "CurrencyPK",
+      "code_field": "Currency_Cd"
+    },
+    "Lang": {
+      "table": "Lang",
+      "pk_field": "LangPK",
+      "code_field": "Lang_Cd"
+    },
+    "Timezone": {
+      "table": "Timezone",
+      "pk_field": "TimezonePK",
+      "code_field": "Timezone_Cd"
+    },
+    "Roles": {
+      "table": "Roles",
+      "pk_field": "RolePK",
+      "code_field": "Role_Cd"
+    },
+    "Person": {
+      "table": "Person",
+      "pk_field": "PersonPK",
+      "code_field": "PersonNumber"
+    },
+    "Organization": {
+      "table": "Organization",
+      "pk_field": "OrgPK",
+      "code_field": "org_code"
+    }
+  },
+  "__note__": "These fields are automatically available to all object schemas and should not be duplicated in individual schemas. When a field has 'schema_ref' attribute, use the schema_refs mappings to resolve FK. For Code table references, use 'cat_cd_ref' instead."
+}
+

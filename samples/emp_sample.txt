@@ -1,0 +1,11 @@
+PersonNumber|FirstName|MiddleName|LastName|Preferredname|Email|Active|LoginEnabled|Inst|title|Role_Cd|photourl|Currency_Cd|StatusCodeId|TypeCodeId|IsDeleted|StartDate|EndDate|City|State|MgrPersonNumber|UserName|Password|MustChangePwd|OrgFK|IsPrimary|PersonOrgIsDeleted
+EMP001|John|A|Doe|Johnny|john.doe@example.com|1|1|0|Software Engineer|DEV|http://example.com/john.jpg|USD|Active|EMP|0|2024-01-01T00:00:00Z||Bangalore|KA|EMP000|jdoe|Welcome@123|1|ORG001|1|0
+EMP002|Priya||Sharma|Priya|priya.sharma@example.com|1|1|0|Data Analyst|ANL|http://example.com/priya.jpg|INR|Active|EMP|0|2023-06-15T00:00:00Z||Hyderabad|TS|EMP001|psharma|Welcome@123|0|ORG001|1|0
+EMP003|Ravi||Kumar|Ravi|ravi.kumar@example.com|1|0|0|Project Manager|PM|http://example.com/ravi.jpg|INR|Active|EMP|0|2022-04-01T00:00:00Z||Chennai|TN||rkumar||0|ORG002|1|0
+EMP004|Anita||Verma|Anita|anita.verma@example.com|1|1|0|HR Manager|HR|http://example.com/anita.jpg|INR|Active|EMP|0|2021-11-10T00:00:00Z||Pune|MH|EMP003|averma|Welcome@123|0|ORG001|1|0
+EMP005|Suresh||Reddy|Suresh|suresh.reddy@example.com|1|1|0|QA Engineer|QA|http://example.com/suresh.jpg|INR|Active|EMP|0|2023-02-20T00:00:00Z||Vijayawada|AP|EMP001|sreddy|Welcome@123|1|ORG001|1|0
+EMP006|Neha||Gupta|Neha|neha.gupta@example.com|1|1|0|UI Designer|UX|http://example.com/neha.jpg|INR|Active|EMP|0|2024-03-05T00:00:00Z||Delhi|DL|EMP004|ngupta|Welcome@123|0|ORG002|1|0
+EMP007|Arjun||Mehta|Arjun|arjun.mehta@example.com|1|0|0|DevOps Engineer|DEVOPS|http://example.com/arjun.jpg|USD|Active|EMP|0|2022-08-18T00:00:00Z||Ahmedabad|GJ|EMP001|amehta||0|ORG001|1|0
+EMP008|Kavya||Nair|Kavya|kavya.nair@example.com|1|1|0|Business Analyst|BA|http://example.com/kavya.jpg|INR|Active|EMP|0|2023-07-01T00:00:00Z||Kochi|KL|EMP003|knair|Welcome@123|1|ORG002|1|0
+EMP009|Mohit||Singh|Mohit|mohit.singh@example.com|1|1|0|Support Engineer|SUPPORT|http://example.com/mohit.jpg|INR|Active|EMP|0|2024-04-12T00:00:00Z||Noida|UP|EMP002|msingh|Welcome@123|0|ORG001|1|0
+EMP010|Lakshmi||Iyer|Lakshmi|lakshmi.iyer@example.com|1|1|0|Finance Executive|FIN|http://example.com/lakshmi.jpg|INR|Active|EMP|0|2020-09-25T00:00:00Z||Coimbatore|TN|EMP004|liyer|Welcome@123|0|ORG002|1|0

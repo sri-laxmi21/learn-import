@@ -1,0 +1,11 @@
+job_id|job_title|job_code|department|level|min_salary|max_salary|active
+JOB001|Chief Executive Officer|CEO|Executive|10|150000|250000|1
+JOB002|Vice President of Sales|VP-SALES|Sales|9|120000|200000|1
+JOB003|Sales Manager|SALES-MGR|Sales|7|80000|120000|1
+JOB004|Senior Software Engineer|SWE-SR|Engineering|6|90000|150000|1
+JOB005|Software Engineer|SWE-JR|Engineering|4|65000|100000|1
+JOB006|Marketing Manager|MKT-MGR|Marketing|7|75000|115000|1
+JOB007|HR Business Partner|HR-BP|Human Resources|6|70000|110000|1
+JOB008|Finance Analyst|FIN-ANL|Finance|5|65000|95000|1
+JOB009|IT Support Specialist|IT-SUP|IT|3|50000|75000|1
+JOB010|Legal Counsel|LEGAL-CNSL|Legal|8|110000|170000|1

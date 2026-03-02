@@ -1,0 +1,11 @@
+skill_id,skill_name,skill_code,SkillType,category,description,level,active
+SKL001,Python Programming,PYTHON,2,Software Development,Ability to write and maintain Python applications,4,1
+SKL002,Data Analysis,DATA-ANL,1,Analytics,Analyzing structured and unstructured data for insights,4,1
+SKL003,Project Management,PROJ-MGMT,2,Management,Planning and executing projects within scope and timeline,5,1
+SKL004,Communication Skills,COMM,1,Soft Skills,Effective verbal and written communication,3,1
+SKL005,Database Design,DB-DESIGN,2,Database,Designing relational database schemas,4,1
+SKL006,Cloud Computing,CLOUD,1,IT Infrastructure,Understanding cloud platforms like AWS and Azure,3,1
+SKL007,Problem Solving,PROB-SOLVE,1,Soft Skills,Identifying issues and providing optimal solutions,4,1
+SKL008,Frontend Development,FRONTEND,2,Web Development,Building responsive user interfaces,3,1
+SKL009,Backend Development,BACKEND,2,Web Development,Developing APIs and server-side logic,4,1
+SKL010,DevOps Practices,DEVOPS,2,IT Operations,CI/CD pipelines and infrastructure automation,5,1

@@ -1,0 +1,12 @@
+{
+    "__comment__": "Database Configuration - Common DB (ziora_shared_db) connection string only",
+    "common_db": {
+        "connection_string": "postgresql://postgres:srilaxmi123@localhost:5432/ziora_shared_db",
+        "__note__": "Replace with your actual common database connection string"
+    },
+    "__instructions__": [
+        "This file contains ONLY the common database connection string",
+        "Tenant-specific database connection strings are stored in the Tenants table in the common DB",
+        "Do not commit this file with actual credentials - use environment variables or secure vault"
+    ]
+}
